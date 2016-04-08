@@ -38,17 +38,29 @@
         android:gravity="center_horizontal"
         android:padding="10dp">
 
-    <ImageButton
-        android:id="@+id/speek_btn"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:src="@drawable/ic_mic_white_24dp"
-        android:background="@drawable/speek_icon_bg"/>
+        <LinearLayout
+              android:id="@+id/speekOptions"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:gravity="center_horizontal">
+            <ImageButton
+                android:id="@+id/speek_btn"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@drawable/ic_mic_white_24dp"
+                android:background="@drawable/speek_icon_bg"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tap to speek a command"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tap to speek a command"/>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="75dp" android:layout_height="75dp"
+            android:visibility="gone"/>
 
     </LinearLayout>
 
